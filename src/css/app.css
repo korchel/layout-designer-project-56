@@ -32,17 +32,17 @@ body {
 @media screen and (min-width: 1240px) {
   h1 {
     margin: 0;
+    font-family: Roboto-Bold, sans-serif;
     font-size: 60px;
     line-height: 90px;
-    font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
   }
   h2 {
     margin: 0;
+    font-family: Roboto-Bold, sans-serif;
     font-size: 38px;
     line-height: 57px;
-    font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
   }
@@ -55,16 +55,17 @@ body {
 @media (max-width: 1239px) {
   h1 {
     margin: 0;
+    font-family: Roboto-Bold, sans-serif;
     font-size: 30px;
     line-height: 45px;
-    font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
   }
   h2 {
+    margin: 0;
+    font-family: Roboto-Bold, sans-serif;
     font-size: 18px;
     line-height: 27px;
-    font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
   }
@@ -84,18 +85,27 @@ body {
   display: flex;
   align-items: center;
 }
-.menu p, .menu a {
+.menu li {
+  height: 25px;
+  line-height: 25px;
   font-size: 11px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .logo {
-  width: 24px;
-  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.logo input {
+  display: block;
+  width: 25px;
+  height: 25px;
   margin-right: 16px;
 }
-.logo + label {
+.logo input + label {
+  display: block;
+  height: 25px;
+  line-height: 25px;
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -121,6 +131,10 @@ body {
   margin: 0;
   padding: 0;
   margin-left: 90px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .bg-banner {
@@ -160,7 +174,7 @@ body {
   color: #FFFFFF;
 }
 .banner .form button {
-  min-width: 570px;
+  min-width: 100%;
   min-height: 50px;
   padding: 20px 30px;
   border-radius: 5px;
@@ -171,21 +185,36 @@ body {
   flex: 1 1 570px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 440px) {
   .menu {
     display: block;
   }
+  .menu li {
+    height: 13px;
+    line-height: 13px;
+  }
   .nav {
-    display: block;
+    flex-direction: column;
+    height: 61px;
     margin-left: 0;
     margin-top: 17px;
-  }
-  .nav li {
-    line-height: 12.9px;
   }
   .search {
     width: 100%;
     margin-top: 18px;
+  }
+  .banner {
+    margin-top: 248px;
+  }
+  .banner p {
+    margin-top: 16px;
+  }
+  .banner .form {
+    width: 100%;
+    button-flex: 1 1 100%;
+  }
+  .banner .form input {
+    flex: 1 1 100%;
   }
 }
 
