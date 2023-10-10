@@ -1,0 +1,58 @@
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(367px, 1fr));
+    gap: 50px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-200 {
+    margin-top: 200px;
+}
+
+@mixin bg-position {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.bg-pricing-1 {
+    background-image: url('../images/pricing/subscribe_1.png');
+    @include bg-position;
+}
+
+.bg-pricing-2 {
+    background-image: url('../images/pricing/subscribe_2.png');
+    @include bg-position;
+}
+
+.bg-pricing-3 {
+    background-image: url('../images/pricing/subscribe_3.png');
+    @include bg-position;
+}
+
+.pricing-item {
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .pricing-value {
+        font-size: 64px;
+        line-height: 1;
+        span {
+            font-size: 32px;
+            vertical-align: top;
+        }
+    }
+    a {
+        display: block;
+        width: 100%;
+
+        @include btn;
+    }
+}

@@ -65,9 +65,7 @@
   margin-left: 90px;
 }
 
-.text-center {
-  text-align: center;
-}
+
 
 .bg-banner {
   background-image: url('../images/banner.png');
@@ -111,13 +109,14 @@
     }
 
     button {
+      @include btn;
+
       min-width: 100%;
       min-height: 50px;
       padding: 20px 30px;
-      border-radius: 5px;
+      border: none;
 
       font-size: 13.3px;
-      text-transform: uppercase;
       color: $white;
       background-color: $green;
       flex: 1 1 570px;

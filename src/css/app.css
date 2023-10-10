@@ -29,6 +29,14 @@ body {
   background-color: #08020d;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
 @media screen and (min-width: 1240px) {
   h1 {
     margin: 0;
@@ -52,7 +60,7 @@ body {
     margin-right: auto;
   }
 }
-@media (max-width: 1239px) {
+@media (max-width: 440px) {
   h1 {
     margin: 0;
     font-family: Roboto-Bold, sans-serif;
@@ -133,10 +141,6 @@ body {
   margin-left: 90px;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .bg-banner {
   background-image: url("../images/banner.png");
   background-position: center;
@@ -174,12 +178,15 @@ body {
   color: #FFFFFF;
 }
 .banner .form button {
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
   min-width: 100%;
   min-height: 50px;
   padding: 20px 30px;
-  border-radius: 5px;
+  border: none;
   font-size: 13.3px;
-  text-transform: uppercase;
   color: #FFFFFF;
   background-color: #34C176;
   flex: 1 1 570px;
@@ -216,6 +223,66 @@ body {
   .banner .form input {
     flex: 1 1 100%;
   }
+}
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(367px, 1fr));
+  gap: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.bg-pricing-1 {
+  background-image: url("../images/pricing/subscribe_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-pricing-2 {
+  background-image: url("../images/pricing/subscribe_2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-pricing-3 {
+  background-image: url("../images/pricing/subscribe_3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-item {
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+}
+.pricing-item h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.pricing-item .pricing-value {
+  font-size: 64px;
+  line-height: 1;
+}
+.pricing-item .pricing-value span {
+  font-size: 32px;
+  vertical-align: top;
+}
+.pricing-item a {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */
