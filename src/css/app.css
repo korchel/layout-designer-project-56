@@ -60,7 +60,7 @@ body {
     margin-right: auto;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 620px) {
   h1 {
     margin: 0;
     font-family: Roboto-Bold, sans-serif;
@@ -79,7 +79,8 @@ body {
   }
   .container {
     width: 100%;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .flex-center {
@@ -192,7 +193,7 @@ body {
   flex: 1 1 570px;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 620px) {
   .menu {
     display: block;
   }
@@ -228,6 +229,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 366px);
   gap: 50px;
+  justify-content: center;
 }
 
 .mt-50 {
@@ -305,6 +307,45 @@ body {
 .pricing-footer {
   margin-top: 40px;
   text-align: center;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: repeat(2, 575px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
+.news-item img {
+  max-width: 100%;
+  grid-row: span 2;
+}
+.news-item h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.news-item h3 + p {
+  margin-top: 30px;
+}
+
+.news-footer p {
+  display: inline-block;
+}
+.news-footer a {
+  display: block;
+  width: 165px;
+  height: 53px;
+  padding: 16px 30px;
+  margin: 48px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */

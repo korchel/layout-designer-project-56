@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 366px);
     gap: 50px;
+    justify-content: center;
 }
 
 .mt-50 {

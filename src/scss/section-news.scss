@@ -1,0 +1,46 @@
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: repeat(2, 575px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+
+  img {
+    max-width: 100%;
+
+    grid-row: span 2;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 30px;
+    color: $white;
+
+    + p {
+      margin-top: 30px;
+    }
+
+    
+  }
+}
+
+.news-footer {
+  p {
+    display: inline-block;
+  }
+  a {
+    display: block;
+  
+    width: 165px;
+    height: 53px;
+    padding: 16px 30px;
+    margin: 48px 0 0;
+
+    text-align: center;
+
+    @include btn;
+  }
+}
