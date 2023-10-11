@@ -34,7 +34,6 @@
     flex-direction: column;
     align-items: center;
 
-    height: 615px;
     padding: 0 1.5rem;
     border-radius: 1rem;
     h3 {
@@ -42,6 +41,10 @@
         font-size: 24px;
         font-weight: 400;
         text-transform: uppercase;
+        @media (max-width: 620px) {
+            margin: 16px 0 0;
+            font-size: 16px;
+        }
     }
     .pricing-value {
         margin: 200px 0 0;
@@ -66,7 +69,7 @@
         @include btn;
 
         + p {
-            margin: 64px 0 0;
+            margin: 64px 0 64px;
             font-size: 12.8px;
             text-align: center;
         }
