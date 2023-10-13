@@ -313,6 +313,10 @@ body {
   margin-top: 48px;
 }
 
+.mt-65 {
+  margin-top: 65px;
+}
+
 .news-item {
   display: flex;
   column-gap: 50px;
@@ -375,8 +379,15 @@ body {
   cursor: pointer;
 }
 
+.news-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
 @media (max-width: 620px) {
   .news-item {
+    flex-direction: column;
+  }
+  .news-item:nth-child(odd) {
     flex-direction: column;
   }
 }
