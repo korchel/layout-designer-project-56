@@ -556,4 +556,38 @@ body {
   text-transform: uppercase;
 }
 
+.discography-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.discography-item img {
+  width: 250px;
+}
+.discography-item .discography-info {
+  margin-top: 12px;
+}
+.discography-item .discography-info h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+.discography-item .discography-info p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .discography-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .discography-item img {
+    height: 137px;
+    width: 137px;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
