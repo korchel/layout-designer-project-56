@@ -57,6 +57,14 @@ body {
   margin-top: 48px;
 }
 
+.bg-red {
+  background-color: $red;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
 @media screen and (min-width: 1240px) {
   h1 {
     margin: 0;

@@ -146,6 +146,10 @@ body {
   border-radius: 12.5px;
   background: #3C3B3D;
 }
+.search::-moz-placeholder {
+  text-transform: uppercase;
+  color: #757575;
+}
 .search::placeholder {
   text-transform: uppercase;
   color: #757575;
@@ -186,7 +190,8 @@ body {
 .grid-footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  column-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   row-gap: 14px;
 }
 
@@ -203,7 +208,8 @@ body {
 }
 .footer .footer-bottom ul {
   display: flex;
-  column-gap: 17px;
+  -moz-column-gap: 17px;
+       column-gap: 17px;
   row-gap: 16px;
 }
 @media (max-width: 640px) {
@@ -256,6 +262,10 @@ body {
   border-radius: 3px;
   background: none;
   flex: 0 1 270px;
+}
+.banner .form input::-moz-placeholder {
+  font-size: 14px;
+  color: #FFFFFF;
 }
 .banner .form input::placeholder {
   font-size: 14px;
@@ -383,7 +393,8 @@ body {
 
 .news-item {
   display: flex;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 .news-item h3 {
   margin: 0;
@@ -429,6 +440,7 @@ body {
 }
 .news-item a {
   display: block;
+  width: -moz-fit-content;
   width: fit-content;
   height: 53px;
   padding: 16px 30px;
@@ -458,7 +470,8 @@ body {
 
 .flex {
   display: flex;
-  column-gap: 35px;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
 }
 .flex img {
   display: block;
@@ -482,48 +495,13 @@ body {
     flex-direction: column-reverse;
   }
 }
-.bg-banner-artist {
-  background-image: url("../images/artist/Morten Harket.png");
+.banner-artist {
+  background-image: url("../../images/artist/Morten Harket.png");
   background-position: center;
   background-size: cover;
 }
 
 .artist-description {
-  padding-top: 250px;
+  padding-top: 200px;
   padding-bottom: 200px;
-}
-.artist-description .btn-group {
-  display: flex;
-  column-gap: 1.5rem;
-}
-.artist-description .btn-group button {
-  display: inline-block;
-  text-transform: uppercase;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  width: 200px;
-  padding: 20px 30px;
-  border: none;
-  font-size: 12.8px;
-  color: #FFFFFF;
-}
-.artist-description .btn-group button img {
-  width: 20px;
-  filter: invert(1);
-}
-
-@media (max-width: 640px) {
-  .artist-description {
-    padding-top: 225px;
-  }
-  .btn-group {
-    flex-direction: column;
-    row-gap: 24px;
-  }
-}
-
-/*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */

@@ -1,7 +1,10 @@
 @import "variables.scss";
 @import "general.scss";
-@import "section-header.scss";
-@import "section-pricing.scss";
-@import "section-news.scss";
-@import "section-app.scss";
-@import "section-footer.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "./index/description.scss";
+@import "./index/pricing.scss";
+@import "./index/news.scss";
+@import "./index/section-app.scss";
+@import "./artist/description.scss";
+
