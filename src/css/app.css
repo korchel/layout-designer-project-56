@@ -525,5 +525,35 @@ body {
     row-gap: 24px;
   }
 }
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 550px));
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.track {
+  display: flex;
+  column-gap: 15px;
+}
+.track img {
+  display: block;
+  height: 55px;
+  width: 55px;
+}
+.track .track-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.track .track-info p {
+  margin: 0;
+  font-size: 12.8px;
+}
+.track .track-info p span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=app.css.map */
