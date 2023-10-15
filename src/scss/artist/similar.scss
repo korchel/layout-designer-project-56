@@ -1,22 +1,27 @@
-.discography-grid {
+.similar-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
   column-gap: 50px;
   row-gap: 25px;
 }
 
-.discography-item {
+.similar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   img {
     width: 250px;
   }
-  .discography-info {
-    margin-top: 13px;
+  .similar-info {
+    text-align: center;
+
+    margin-top: 20px;
     h3 {
       font-size: 18px;
       line-height: 27px;
-      font-weight: 700;
+      font-weight: bold;
       color: $white;
-  
+
       margin: 0;
     }
     p {
@@ -26,10 +31,10 @@
 }
 
 @media (max-width: 640px) {
-  .discography-grid {
+  .similar-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .discography-item {
+  .similar-item {
     img {
       height: 137px;
       width: 137px;
