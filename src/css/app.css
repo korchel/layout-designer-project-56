@@ -29,6 +29,7 @@ body {
   line-height: 1.5;
   color: #CACACA;
   background-color: #08020d;
+  overflow-x: hidden;
 }
 
 .text-center {
