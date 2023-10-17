@@ -28,7 +28,6 @@ body {
   line-height: 1.5;
   color: #CACACA;
   background-color: #08020d;
-  overflow-x: hidden;
 }
 
 .text-center {
@@ -56,29 +55,30 @@ body {
   background-color: #5328A1;
 }
 
-@media screen and (min-width: 1240px) {
-  h1 {
-    margin: 0;
-    font-family: Roboto-Bold, sans-serif;
-    font-size: 60px;
-    line-height: 90px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-  h2 {
-    margin: 0;
-    font-family: Roboto-Bold, sans-serif;
-    font-size: 38px;
-    line-height: 57px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-  .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+h1 {
+  margin: 0;
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
+
+h2 {
+  margin: 0;
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 1200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @media (max-width: 620px) {
   h1 {
     margin: 0;
