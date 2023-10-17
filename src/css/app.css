@@ -12,6 +12,20 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #CACACA;
+  background-color: #08020d;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 ul, li {
   list-style: none;
   padding: 0;
@@ -20,16 +34,6 @@ ul, li {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-body {
-  margin: 0;
-  width: 100%;
-  font-family: Roboto, sans-serif;
-  line-height: 1.5;
-  color: #CACACA;
-  background-color: #08020d;
-  overflow-x: hidden;
 }
 
 .text-center {
@@ -79,8 +83,6 @@ h2 {
   width: 1240px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (max-width: 620px) {
