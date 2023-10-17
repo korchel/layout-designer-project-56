@@ -31,6 +31,8 @@ body {
   line-height: 1.5;
   color: $dark-grey;
   background-color: $bg-color;
+
+  overflow-x: hidden;
 }
 
 @mixin btn {
