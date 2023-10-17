@@ -299,10 +299,6 @@ body {
   justify-content: center;
 }
 
-.mt-50 {
-  margin-top: 50px;
-}
-
 .bg-pricing-1 {
   background-image: url("../images/pricing/subscribe_1.png");
   background-repeat: no-repeat;
@@ -332,21 +328,21 @@ body {
   border-radius: 1rem;
 }
 .pricing-item h3 {
-  margin: 24px 0 0;
+  margin: 18px 0 0;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
 @media (max-width: 620px) {
   .pricing-item h3 {
-    margin: 16px 0 0;
+    margin: 12px 0 0;
     font-size: 16px;
   }
 }
 .pricing-item .pricing-value {
   margin: 200px 0 0;
   font-size: 64px;
-  line-height: 1;
+  line-height: 1em;
 }
 .pricing-item .pricing-value span {
   font-size: 32px;
@@ -356,8 +352,7 @@ body {
 .pricing-item a {
   display: block;
   width: 100%;
-  height: 66px;
-  padding: 21px;
+  padding: 20px;
   margin: 40px 0 0;
   text-align: center;
   display: inline-block;
