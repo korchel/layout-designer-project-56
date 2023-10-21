@@ -336,25 +336,30 @@ h2 {
   border-radius: 1rem;
 }
 .pricing-item h3 {
-  margin: 18px 0 0;
+  margin-bottom: 0;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
 @media (max-width: 620px) {
   .pricing-item h3 {
-    margin: 12px 0 0;
     font-size: 16px;
   }
 }
 .pricing-item .pricing-value {
+  display: flex;
+  column-gap: 16px;
   margin: 200px 0 0;
-  font-size: 64px;
-  line-height: 1em;
 }
-.pricing-item .pricing-value span {
+.pricing-item .pricing-value p {
+  margin: 0;
+  line-height: 1em;
+  font-size: 64px;
+}
+.pricing-item .pricing-value .currency {
+  margin-top: 10px;
   font-size: 32px;
-  vertical-align: top;
+  line-height: 1em;
   text-transform: uppercase;
 }
 .pricing-item a {
