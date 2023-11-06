@@ -11,3 +11,6 @@ css:
 
 watch:
 	sass --watch ./src/scss/app.scss:./src/css/app.css
+
+deploy:
+	npx surge ./src/
