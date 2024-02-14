@@ -1,7 +1,6 @@
 /node_modules/
 package-lock.json
 /src/CNAME
-/src/scss/*css
-/src/scss/*.css.map
-/src/scss/*.sass.map
+/src/css/*.css
+/src/css/*.css.map
 /src/scss/*.scss.map
